@@ -1,0 +1,67 @@
+.card {
+	margin-bottom: 0.5rem;
+	position: relative;
+	cursor: pointer;
+	.card_container {
+		padding: 0.5rem;
+		border-radius: 8px;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.left_side {
+			display: flex;
+			align-items: center;
+			h3 {
+				font-weight: 500;
+				font-size: 0.9rem;
+			}
+		}
+		.right_side {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+
+			.temp {
+				font-size: 0.85rem;
+				color: gray;
+			}
+			.des {
+				font-weight: 500;
+			}
+		}
+	}
+	.drop_down {
+		height: 0;
+		overflow: hidden;
+		padding: 0 1rem;
+		transition: all 0.4s;
+		.drop_down-box {
+			display: flex;
+			gap: 1rem;
+		}
+		p {
+			color: gray;
+			font-size: 0.9rem;
+		}
+		span {
+			font-weight: 500;
+			font-size: 0.9rem;
+		}
+		.drop_down-box-left {
+			display: flex;
+			flex: 1;
+			justify-content: space-between;
+		}
+		.drop_down-box-right {
+			flex: 1;
+			justify-content: space-between;
+			display: flex;
+		}
+		&.active {
+			height: 80px;
+			padding: 0.5rem 1rem;
+		}
+	}
+}
